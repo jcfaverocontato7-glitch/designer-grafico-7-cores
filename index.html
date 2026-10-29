@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Gráfico 7 Cores | Criação e Arte Visual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FCC14A;
+            color: #1E1E1C;
+            perspective: 1200px;
+        }
+        
+        .gradiente-7cores {
+            background: linear-gradient(90deg, #ff3b30, #ff9500, #ffcc00, #34c759, #007aff, #5856d6, #af52de);
+        }
+        
+        .texto-gradiente {
+            background: linear-gradient(90deg, #ff3b30, #ff9500, #34c759, #007aff, #af52de);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Giro 3D e Revelação da Logo */
+        @keyframes revelacaoMagica {
+            0% {
+                transform: scale(0.2) rotateY(720deg);
+                opacity: 0;
+            }
+            30%, 80% {
+                transform: scale(1) rotateY(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.2) rotateY(-720deg);
+                opacity: 0;
+            }
+        }
+        
+        .logo-animada-3d {
+            animation: revelacaoMagica 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+            transform-style: preserve-3d;
+        }
+
+        /* Moldura Refinada e Sombra Profunda no Bloco Principal */
+        .moldura-topo-master {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            border: 2px solid rgba(255, 193, 74, 0.4);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.55), 0 0 35px rgba(255, 193, 74, 0.2);
+        }
+
+        /* Efeito Vitrine com Salto e Moldura de Galeria */
+        .card-vitrine {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.08);
+        }
+        .card-vitrine:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+            border-color: #FA5255;
+        }
+
+        /* Botão Flutuante de WhatsApp com Pulso */
+        @keyframes pulsoWp {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 18px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .whatsapp-flutuante {
+            animation: pulsoWp 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra Superior 7 Cores -->
+    <div class="h-2.5 w-full gradiente-7cores"></div>
+
+    <!-- Cabeçalho -->
+    <header class="container mx-auto px-6 py-6 flex justify-between items-center border-b border-black/15">
+        <div class="text-2xl font-extrabold tracking-tight text-slate-950">
+            Designer Gráfico <span class="text-red-600">7 Cores</span>
+        </div>
+        <a href="https://wa.me/5511940824880?text=Ol%C3%A1%20Jo%C3%A3o!%20Vim%20pelo%20site%20Designer%20Gr%C3%A1fico%207%20Cores%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+           target="_blank"
+           class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-2.5 px-6 rounded-full transition duration-300 shadow-lg">
+            Falar no WhatsApp
+        </a>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="py-20 lg:py-28 px-6 text-center">
+        
+        <!-- Bloco da Logo com Moldura Refinada -->
+        <div class="max-w-xl mx-auto mb-12">
+            <div class="logo-animada-3d moldura-topo-master p-10 rounded-3xl inline-block w-full">
+                <div class="h-2 w-36 gradiente-7cores rounded-full mx-auto mb-6"></div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-2">
+                    7 CORES
+                </h2>
+                <p class="texto-gradiente font-bold text-xl uppercase tracking-widest mb-4">
+                    Designer Gráfico
+                </p>
+                <p class="text-slate-300 text-sm font-medium">Criação Profissional • CorelDRAW • São Paulo</p>
+                <div class="h-1.5 w-24 gradiente-7cores rounded-full mx-auto mt-6"></div>
+            </div>
+        </div>
+
+        <!-- Títulos e Chamada Principal -->
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block bg-slate-900 text-amber-400 text-sm font-semibold px-5 py-1.5 rounded-full uppercase tracking-wider mb-6 shadow-md">
+                Design Profissional & Arte Final
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-slate-950">
+                Destaque o seu negócio com <span class="text-red-600">Artes Incríveis</span>
+            </h1>
+            <p class="text-slate-900 text-lg md:text-xl mt-6 max-w-2xl mx-auto font-medium leading-relaxed">
+                Criação de cartões de visita, panfletos, banners e artes para redes sociais. Design direto ao ponto, com acabamento profissional no CorelDRAW pronto para impressão ou tela.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5511940824880?text=Ol%C3%A1%20Jo%C3%A3o!%20Vim%20pelo%20site%20Designer%20Gr%C3%A1fico%207%20Cores%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+                   target="_blank"
+                   class="bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-4 px-8 rounded-xl transition duration-300 shadow-xl">
+                    Solicitar Orçamento no WhatsApp
+                </a>
+                <a href="#cartoes" 
+                   class="bg-slate-900 hover:bg-slate-800 text-white font-semibold text-lg py-4 px-8 rounded-xl transition duration-300 shadow-lg">
+                    Ver Cartões de Visita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cartões de Visita -->
+    <section id="cartoes" class="py-20 border-y border-black/15">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="bg-slate-900 text-amber-400 px-4 py-1 rounded-full font-semibold text-xs uppercase tracking-wider">Destaque Principal</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-3 text-slate-950">Cartões de Visita Profissionais</h2>
+                <p class="text-slate-900 font-medium mt-3">A primeira impressão é a que fica. Tenha um cartão marcante que passa total credibilidade para os seus clientes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <div class="card-vitrine bg-slate-950 text-white p-8 rounded-3xl flex flex-col justify-between shadow-xl">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 gradiente-7cores"></div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 font-bold text-xl mb-6 mt-2">01</div>
+                        <h3 class="text-2xl font-bold mb-4">Precisa Criar o Cartão?</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">Não tem a arte pronta? Nós desenvolvemos um layout moderno, personalizado e exclusivo para o seu negócio, direto no CorelDRAW.</p>
+                        <ul class="space-y-3 text-sm text-slate-200 mb-8">
+                            <li class="flex items-center gap-2">✓ Layout personalizado para sua marca</li>
+                            <li class="flex items-center gap-2">✓ Atendimento direto para definir os detalhes</li>
+                            <li class="flex items-center gap-2">✓ Definição de papéis e acabamentos direto comigo</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511940824880?text=Ol%C3%A1%20Jo%C3%A3o!%20Preciso%20de%20ajuda%20para%20criar%20a%20arte%20do%20meu%20cart%C3%A3o%20de%20visita." target="_blank" class="w-full text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 px-6 rounded-xl transition duration-300">Quero Criar minha Arte</a>
+                </div>
+                <div class="card-vitrine bg-slate-950 text-white p-8 rounded-3xl flex flex-col justify-between shadow-xl">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 gradiente-7cores"></div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold text-xl mb-6 mt-2">02</div>
+                        <h3 class="text-2xl font-bold mb-4">Já Tenho a Arte Pronta</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">Se você já tem o seu arquivo pronto (criado em PDF ou curvas), envie direto para avaliarmos a impressão.</p>
+                        <ul class="space-y-3 text-sm text-slate-200 mb-8">
+                            <li class="flex items-center gap-2">✓ Avaliação rápida do arquivo fechado.</li>
+                            <li class="flex items-center gap-2">✓ Conferência de sangrias e margens.</li>
+                            <li class="flex items-center gap-2">✓ Opções de entrega ou retirada na região.</li>
+                            <li class="flex items-center gap-2">✓ Agilidade no fechamento do pedido.</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511940824880?text=Ol%C3%A1%20Jo%C3%A3o!%20Eu%20j%C3%A1%20tenho%20a%20arte%20pronta%20do%20meu%20cart%C3%A3o%20e%20gostaria%20de%20or%C3%A7ar%20a%20impress%C3%A3o." target="_blank" class="w-full text-center bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 px-6 rounded-xl transition duration-300">Enviar Minha Arte Pronta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Estilos de Cartões em Destaque (Itens 1, 2 e 3) -->
+    <section class="py-20 bg-amber-500/10 border-b border-black/15">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="bg-slate-900 text-amber-400 px-4 py-1 rounded-full font-semibold text-xs uppercase tracking-wider">Inspiração & Qualidade</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-3 text-slate-950">Estilos Populares de Criação</h2>
+                <p class="text-slate-900 font-medium mt-3">Modelos planejados para garantir impacto visual, excelente legibilidade e total sofisticação para o seu negócio.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Estilo 1 -->
+                <div class="card-vitrine bg-slate-950 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
+                    <div class="absolute top-0 left-0 right-0 h-1 gradiente-7cores"></div>
+                    <div>
+                        <div class="text-amber-400 font-extrabold text-lg mb-2">01. Estilo Minimalista</div>
+                        <p class="text-slate-300 text-sm mb-4">Design limpo com foco total na marca e nas informações essenciais. Transmite modernidade e elegância pura.</p>
+                    </div>
+                    <a href="https://wa.me/5511940824880?text=Ol%C3%A1%20Jo%C3%A3o!%20Gostaria%20de%20um%20cart%C3%A3o%20no%20estilo%20minimalista." target="_blank" class="text-emerald-400 text-sm font-semibold hover:underline mt-4">Quero este estilo →</a>
+                </div>
+                <!-- Estilo 2 -->
+                <div class="card-vitrine bg-slate-950 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
+                    <div class="absolute top-0 left-0 right-0 h-1 gradiente-7cores"></div>
+                    <div>
+                        <div class="text-amber-400 font-extrabold text-lg mb-2">02. Estilo Comercial Forte</div>
+                        <p class="text-slate-300 text-sm mb-4">Cores de alto contraste e destaque para o que você vende ou repara. Ideal para prestadores de serviços e comércio.</p>
+                    </div>
+                    <a href="https://wa.me/5511940824880?text=Ol%C3%A1%20Jo%C3%A3o!%20Gostaria%20de%20um%20cart%C3%A3o%20no%20estilo%20comercial%20forte." target="_blank" class="text-emerald-400 text-sm font-semibold hover:underline mt-4">Quero este estilo →</a>
+                </div>
+                <!-- Estilo 3 -->
+                <div class="card-vitrine bg-slate-950 text-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
+                    <div class="absolute top-0 left-0 right-0 h-1 gradiente-7cores"></div>
+                    <div>
+                        <div class="text-amber-400 font-extrabold text-lg mb-2">03. Estilo Executivo / Premium</div>
+                        <p class="text-slate-300 text-sm mb-4">Acabamento sóbrio e sofisticado. Perfeito para profissionais liberais, consultores e quem busca máxima autoridade.</p>
+                    </div>
+                    <a href
